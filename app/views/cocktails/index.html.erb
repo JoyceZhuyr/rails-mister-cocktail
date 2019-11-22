@@ -35,7 +35,7 @@
 
 
 
-<div class="cards">
+<!-- <div class="cards">
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://craftandcocktails.co/wp-content/uploads/2018/04/Flora-and-Juniper-5-of-10.jpg)">
     Flora Heaven
   </div>
@@ -47,9 +47,11 @@
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://cn.bing.com/th?id=OIP.ewt7SDDvQnAzoCf8UhPmogHaHa&pid=Api&rs=1)">
     Random pink
   </div>
+</div> -->
+<div class="cards">
+  <% @cocktails.each_with_index do |cocktail, index| %>
+  <%= link_to cocktail.name, cocktail_path(cocktail.id), class: "card-category", style: "background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(/assets/flora#{index}.jpg)"%>
+  <% end %>
 </div>
 
-<% @cocktails.each do |cocktail| %>
-<%= link_to cocktail.name, cocktail_path(cocktail.id) %>
-<% end %>
 <%= link_to "Add cocktail", new_cocktail_path %>
