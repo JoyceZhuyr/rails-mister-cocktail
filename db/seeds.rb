@@ -3,9 +3,8 @@ require 'json'
 Cocktail.destroy_all
 Ingredient.destroy_all
 
-Cocktail.create(name: "
-La Fleurette Cocktail")
-Cocktail.create(name: "Sweet, bubbly, and floral, our La Fleurette cocktail will have you dreaming of spring. Champagne combined with floral flavors makes a drink worth sharing!")
+Cocktail.create(name: "La Fleurette Cocktail")
+Description.create(name: "Sweet, bubbly, and floral, our La Fleurette cocktail will have you dreaming of spring. Champagne combined with floral flavors makes a drink worth sharing!")
 Cocktail.create(name: "test2")
 Cocktail.create(name: "test3")
 

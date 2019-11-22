@@ -10,6 +10,7 @@ class DosesController < ApplicationController
     @dose = Dose.new(dose_params)
     @dose.cocktail_id = @cocktail.id
     @dose.save
+    redirect_to cocktails_path(@cocktail)
   end
 
   def destroy

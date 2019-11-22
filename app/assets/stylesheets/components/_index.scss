@@ -4,3 +4,47 @@
 @import "navbar";
 @import "cards";
 
+.nav-item active {
+  color: #fa697c;
+  font-size: 5px;
+  border-color: #fa697c;
+}
+
+.btn-ghost {
+  color: #4A4A4A;
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin:20px;
+}
+
+.btn-delete{
+  border: 1px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+  margin: 20px;
+}
+
+.btn-ghost:hover {
+  opacity: 1;
+}
+
+.btn-dose {
+    color: black;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: lighter;
+    opacity: 0.6;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    margin-up:20px;
+}
+
+
+

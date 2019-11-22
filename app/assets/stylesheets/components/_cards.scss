@@ -55,3 +55,33 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.card-trip h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+
